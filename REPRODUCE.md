@@ -198,10 +198,59 @@ py -m src.train_baseline
 py -m pytest -q
 ```
 
-Expected: **67 passed** in < 15 s. Tests cover data loading, preprocessing,
+Expected: **84 passed** in < 15 s. Tests cover data loading, preprocessing,
 conversation building, splits, golden-set validation, Stage 1 labels,
 LLM labeler (mock mode, cache, leakage checks), the baseline classifier,
-and the majority-class baselines.
+majority-class baselines, historical reply retrieval, escalation routing,
+end-to-end SupportAgent, and the LLM judge agreement harness.
+
+---
+
+### Step 8 — Run the Support Agent (Inference & Batch Evaluation)
+
+Process individual inquiries or evaluate the agent over the full golden set:
+
+```
+# Single inquiry inference
+py -m src.agent --message "Tracking says my parcel was delivered to porch but nothing is there"
+
+# Batch evaluation on the sealed golden set
+py -m src.agent --batch evaluation/golden_set.csv --output outputs/agent_evaluation.json
+```
+
+**Outputs**
+
+| File | Description |
+|---|---|
+| `outputs/agent_evaluation.json` | Operational metrics: auto-handled vs. escalated counts, rule triggers |
+
+**Results on 200 Golden Examples**:
+- **Auto-Handled**: 12 (6.0%) — high-confidence transactional intents with verified historical grounding
+- **Human-Escalated**: 188 (94.0%) — prioritized safety (106 fallback `other`, 42 low confidence, 27 low grounding, 8 sensitive intent, 5 urgent keyword)
+- **Approximate runtime**: < 3 s
+
+---
+
+### Step 9 — LLM-as-a-Judge & Human Agreement Evaluation
+
+Evaluates reply quality on a 25-interaction benchmark across Relevance, Tone, and Grounding:
+
+```
+py -m src.llm_judge
+```
+
+**Outputs**
+
+| File | Description |
+|---|---|
+| `outputs/judge_report.md` | Human-readable rubric and case study agreement report |
+| `outputs/judge_evaluation.json` | Measured agreement metrics and confusion breakdown |
+
+**Key results (25-example benchmark)**:
+- **Binary Verdict Agreement**: 88.0% (10 True Passes, 12 True Fails, 3 False Negatives)
+- **Pearson Correlation ($r$)**: 0.927
+- **Mean Absolute Error (MAE)**: 0.22 points (on 1–5 scale)
+- **Approximate runtime**: < 1 s
 
 ---
 
@@ -215,7 +264,9 @@ and the majority-class baselines.
 | Step 4 - golden set validation | ~5 s |
 | Step 5 - Stage 2 (cache replay) | ~10 s |
 | Step 6 - baseline train + eval | ~60 s |
-| Step 7 - tests | ~15 s |
+| Step 7 - tests (84 passed) | ~15 s |
+| Step 8 - agent batch evaluation | ~3 s |
+| Step 9 - judge agreement evaluation | ~1 s |
 | **Total** | **< 4 minutes** |
 
 ---
@@ -234,17 +285,24 @@ data/processed/amazonhelp/
   train_stage1.csv
   train_stage2.csv          <- Stage 2; reproduced from cache without API
   baseline_report.json
+  majority_baseline_report.json
   stage2_label_report.json
   stage1_vs_stage2_comparison.md
   training_label_strategy.md
   cache/
     gemini_labels.json      <- 29 Gemini labels; DO NOT DELETE
+    judge_eval_25.json      <- 25-item human-judge benchmark; DO NOT DELETE
 evaluation/
   golden_set.csv            <- 200/200 hand-labelled; DO NOT OVERWRITE
 models/
   baseline_tfidf_logreg.joblib
 outputs/
   baseline_report.md
+  majority_baseline_report.md
+  agent_evaluation.json
+  judge_report.md
+  judge_evaluation.json
+  report.md
 ```
 
 > **Important**: `evaluation/golden_set.csv` contains the sealed human labels.
@@ -255,14 +313,15 @@ outputs/
 
 ## Scope note
 
-This submission implements and evaluates the **intent-classification core** of
-the AI support agent pipeline:
+This submission implements and evaluates the **complete AI customer support pipeline**:
 
-- Conversation reconstruction and leakage-safe dataset construction
-- 10-intent taxonomy with locked definitions
-- Two-stage training-data labelling (rule-based + Gemini distillation)
-- TF-IDF + Logistic Regression baseline evaluated on a sealed golden set
-- 67 unit and integration tests
-
-Reply generation, retrieval, and escalation routing are the planned next
-engineering phase, documented in `roadmap.md`.
+- **Conversation reconstruction**: 1,632 threads and 3,603 customer-brand pairs
+- **Leakage-safe partitioning**: 0 conversation or tweet overlap with golden set
+- **Locked 10-intent taxonomy**: locked operational definitions with Stage 1 heuristics
+- **Two-stage training labels**: rule-based high confidence + Gemini distillation cache
+- **Sealed 200-example golden set**: 200/200 hand-labelled, stratified across all 10 intents
+- **Baselines**: 22.0% train-fitted majority vs 60.0% TF-IDF + LogReg classifier
+- **Historically grounded reply retrieval**: k-NN over 2,139 AmazonHelp training pairs
+- **Escalation policy**: deterministic rules with explicit human-readable reasons
+- **LLM-as-a-judge evaluation**: verified against human ratings on a 25-pair benchmark
+- **84 automated tests**: 100% passing in < 4 seconds

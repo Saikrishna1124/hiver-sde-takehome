@@ -1,0 +1,15 @@
+{
+  "sample_size": 25,
+  "exact_verdict_agreement_pct": 88.0,
+  "exact_verdict_matches": 22,
+  "overall_score_mae": 0.22,
+  "pearson_correlation": 0.927,
+  "confusion_matrix": {
+    "true_pass (both PASS)": 10,
+    "true_fail (both FAIL)": 12,
+    "false_pass (Judge PASS, Human FAIL)": 0,
+    "false_fail (Judge FAIL, Human PASS)": 3
+  },
+  "human_pass_rate": 52.0,
+  "judge_pass_rate": 40.0
+}

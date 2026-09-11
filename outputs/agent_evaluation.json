@@ -1,0 +1,17 @@
+{
+  "total_evaluated": 200,
+  "auto_handled_count": 12,
+  "auto_handled_pct": 6.0,
+  "escalated_count": 188,
+  "escalated_pct": 94.0,
+  "avg_confidence": 0.4974,
+  "avg_similarity": 0.3302,
+  "triggered_rules": {
+    "fallback_intent": 106,
+    "low_confidence": 42,
+    "low_grounding": 27,
+    "eligible_auto_handled": 12,
+    "sensitive_intent": 8,
+    "urgent_keyword": 5
+  }
+}

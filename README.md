@@ -5,12 +5,12 @@ classify the customer's intent, draft a reply grounded in how the brand actually
 replied before, and decide AUTO_HANDLED vs HUMAN_ESCALATION — then prove it works
 with a hand-labelled golden set, baselines, and an LLM judge.
 
-> **Current status: Phases 1-7 complete.** Dataset slice, brand selection,
-> conversation reconstruction, leakage-safe split, two-stage intent labelling
-> (rule-based + Gemini distillation), TF-IDF + LogReg baseline trained and
-> evaluated on a sealed 200-example golden set. 67 tests passing.
-> Reply generation and escalation are roadmapped as next phases. See `roadmap.md`
-> and `outputs/report.md` for full results.
+> **Current status: Full Pipeline Complete & Verified.** Dataset reconstruction,
+> leakage-safe split, 10-intent taxonomy, two-stage intent labelling, TF-IDF + LogReg
+> baseline, historically-grounded reply retrieval (2,139 training pairs), explainable
+> escalation routing (AUTO_HANDLED vs HUMAN_ESCALATION), and LLM-as-a-judge evaluation
+> with measured human agreement. **84 tests passing.**
+> See `REPRODUCE.md` (< 4 min end-to-end) and `outputs/report.md` for full findings.
 
 ## What you need to provide
 
@@ -43,7 +43,7 @@ python -m src.validate_golden_set   # progress + validity checks
 pytest -q                           # unit tests
 ```
 
-`pytest -q` passes: **67 tests, 67 passed** (executed in this repo).
+`pytest -q` passes: **84 tests, 84 passed** (executed in this repo).
 
 Golden set: 200 real messages — **200/200 hand-labelled**, stratified by intent
 and message length, leakage-free. See `evaluation/README.md` and `evaluation/golden_set.csv`.
