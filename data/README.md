@@ -58,4 +58,9 @@ an outbound tweet whose parent tweet has `inbound=True`.
 - 105 distinct brand accounts
 
 Brand ranking lives in `data/processed/brand_analysis.csv`.
-No brand has been selected yet.
+
+**Selected brand:** AmazonHelp
+
+AmazonHelp was selected based on measured customer-support activity in the available
+59,565-row dataset slice. All downstream pipeline results in this repository are
+specific to the AmazonHelp brand.
