@@ -1,0 +1,19 @@
+{
+  "brand": "AmazonHelp",
+  "brand_thread_tweets": 8615,
+  "customer_tweets": 4655,
+  "brand_tweets": 3956,
+  "other_account_tweets": 4,
+  "conversations": 1632,
+  "conversations_with_brand_reply": 1632,
+  "conversations_without_brand_reply": 0,
+  "customer_messages_without_direct_reply": 1052,
+  "multi_turn_conversations": 1115,
+  "customer_brand_pairs": 3603,
+  "duplicate_text_pairs": 219,
+  "unique_customers": 1672,
+  "empty_text_rows": 0,
+  "avg_conversation_length": 5.28,
+  "median_conversation_length": 4.0,
+  "max_conversation_length": 62
+}

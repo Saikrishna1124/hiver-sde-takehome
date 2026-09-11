@@ -1,0 +1,17 @@
+# Central configuration. Every knob the pipeline uses lives here.
+
+data:
+  # Path to the Kaggle file `twcs.csv` (see data/README.md).
+  raw_csv: data/raw/twcs.csv
+  # Rows to read while inspecting / building the brand table.
+  # null = read the whole file in chunks.
+  scan_rows: 300000
+  chunk_size: 100000
+  processed_dir: data/processed
+
+brand:
+  # NOT chosen yet. Candidates are ranked in data/processed/brand_analysis.csv.
+  # Set this to one handle (e.g. AmazonHelp) once the brand decision is made.
+  selected: AmazonHelp
+
+random_seed: 42

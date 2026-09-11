@@ -1,0 +1,254 @@
+{
+  "total_stage2_rows": 1253,
+  "source_breakdown": {
+    "stage1_rule": 824,
+    "stage1_sampled_other": 400,
+    "llm_gemini": 29
+  },
+  "label_distribution": {
+    "delivery_order_status": 478,
+    "other": 401,
+    "service_complaint": 116,
+    "device_digital_content": 73,
+    "refund_return": 68,
+    "account_access": 33,
+    "seller_marketplace": 28,
+    "payment_billing": 24,
+    "item_quality_issue": 20,
+    "prime_membership": 12
+  },
+  "comparison_records": [
+    {
+      "customer_tweet_id": "11078",
+      "customer_message": "@AmazonHelp Talked w/ cust. serv. yesterday. Just sent an email from link. Would like a straight answer abt my order.",
+      "match_category": "multi_match",
+      "stage1_label": "delivery_order_status",
+      "llm_label": "delivery_order_status",
+      "agreement": true
+    },
+    {
+      "customer_tweet_id": "13157",
+      "customer_message": "@AmazonHelp I have asked the customer care exec on phone to cancel the order. Don't want to waste any more of my time on this.",
+      "match_category": "multi_match",
+      "stage1_label": "delivery_order_status",
+      "llm_label": "service_complaint",
+      "agreement": false
+    },
+    {
+      "customer_tweet_id": "13159",
+      "customer_message": "@AmazonHelp I am now cancelling this order because your delivery service just sucks despite prime membership. Switching to @118702 for future.",
+      "match_category": "multi_match",
+      "stage1_label": "prime_membership",
+      "llm_label": "delivery_order_status",
+      "agreement": false
+    },
+    {
+      "customer_tweet_id": "14286",
+      "customer_message": "@119038 @115821 If it isn't clear yet, I WANT MY MONEY BACK. I NEVER AUTHORIZED THE LAST 4 TRANSACTIONS THAT WERE MADE. WTF.",
+      "match_category": "multi_match",
+      "stage1_label": "refund_return",
+      "llm_label": "refund_return",
+      "agreement": true
+    },
+    {
+      "customer_tweet_id": "14855",
+      "customer_message": "@115821 407-8406190-7752345. i want refund amount -1399/- amazon seller was lying. amazon custamare care side also.",
+      "match_category": "multi_match",
+      "stage1_label": "seller_marketplace",
+      "llm_label": "refund_return",
+      "agreement": false
+    },
+    {
+      "customer_tweet_id": "15279",
+      "customer_message": "@AmazonHelp 408-9273159-6369903.replacement ordered from 24th Oct.no1 contact me.Really worst courier service from Amazon",
+      "match_category": "multi_match",
+      "stage1_label": "refund_return",
+      "llm_label": "delivery_order_status",
+      "agreement": false
+    },
+    {
+      "customer_tweet_id": "15672",
+      "customer_message": "Fool me twice!  Another kindle release day, another missed \"guaranteed release day delivery\"  #AMAZONFAIL",
+      "match_category": "multi_match",
+      "stage1_label": "device_digital_content",
+      "llm_label": "delivery_order_status",
+      "agreement": false
+    },
+    {
+      "customer_tweet_id": "16117",
+      "customer_message": "@115850 No speedy respnse frm the seller side..I asked 2 return my money but they are not ready 2 clr my issue i need my query to b solved",
+      "match_category": "multi_match",
+      "stage1_label": "seller_marketplace",
+      "llm_label": "seller_marketplace",
+      "agreement": true
+    },
+    {
+      "customer_tweet_id": "16428",
+      "customer_message": "@AmazonHelp Not impressed with Amazon Logistics. Computer parts delayed a week and a refund is the only option? Really disappointed.",
+      "match_category": "multi_match",
+      "stage1_label": "refund_return",
+      "llm_label": "delivery_order_status",
+      "agreement": false
+    },
+    {
+      "customer_tweet_id": "16433",
+      "customer_message": "@119356 @AmazonHelp     horrible service, lousy customer care, non existent courier phone numbers. So much for becoming a Prime customer!",
+      "match_category": "multi_match",
+      "stage1_label": "delivery_order_status",
+      "llm_label": "service_complaint",
+      "agreement": false
+    },
+    {
+      "customer_tweet_id": "16784",
+      "customer_message": "@AmazonHelp That's what m doing n u making me believe more that refund policy by Amazon in India is really poor..!\nUr seller is even not taking calls nw",
+      "match_category": "multi_match",
+      "stage1_label": "seller_marketplace",
+      "llm_label": "seller_marketplace",
+      "agreement": true
+    },
+    {
+      "customer_tweet_id": "16792",
+      "customer_message": "@AmazonHelp All m getting is apologies but no refund.. everything is online, unable to understand the delay!!",
+      "match_category": "multi_match",
+      "stage1_label": "refund_return",
+      "llm_label": "refund_return",
+      "agreement": true
+    },
+    {
+      "customer_tweet_id": "16796",
+      "customer_message": "@115850 406-5758893-2189165 faulty pc. the pc. returned but no refund recd. till now, got mail refund will be made in 5 days, bt not done. https://t.co/1jCDRlwfIZ",
+      "match_category": "multi_match",
+      "stage1_label": "refund_return",
+      "llm_label": "refund_return",
+      "agreement": true
+    },
+    {
+      "customer_tweet_id": "1698",
+      "customer_message": "@AmazonHelp Thats the thing I told customer service. I created a new email address for the Prime trial and forgot it. What can I do so I'm not charged?",
+      "match_category": "multi_match",
+      "stage1_label": "prime_membership",
+      "llm_label": "prime_membership",
+      "agreement": true
+    },
+    {
+      "customer_tweet_id": "1699",
+      "customer_message": "@AmazonHelp I called customer service and was told my membership wouldn't be renewed. I was just charged today. How do I get a refund? https://t.co/SeoQUsA0VA",
+      "match_category": "multi_match",
+      "stage1_label": "refund_return",
+      "llm_label": "prime_membership",
+      "agreement": false
+    },
+    {
+      "customer_tweet_id": "17639",
+      "customer_message": "@AmazonHelp It is a doorstep pick up but I need to bear the charges for the courier while I am struggling to get a refund for the already paid order",
+      "match_category": "multi_match",
+      "stage1_label": "refund_return",
+      "llm_label": "refund_return",
+      "agreement": true
+    },
+    {
+      "customer_tweet_id": "17641",
+      "customer_message": "@AmazonHelp #pathetic customer service. New low in e-commerce. Trying to raise a return request 5 times. #Fail",
+      "match_category": "multi_match",
+      "stage1_label": "refund_return",
+      "llm_label": "refund_return",
+      "agreement": true
+    },
+    {
+      "customer_tweet_id": "17655",
+      "customer_message": "@AmazonHelp I need a solution why u r not helping consumers on self return things. M not bought product to self return. Why Amazon allows such seller",
+      "match_category": "multi_match",
+      "stage1_label": "seller_marketplace",
+      "llm_label": "refund_return",
+      "agreement": false
+    },
+    {
+      "customer_tweet_id": "17659",
+      "customer_message": "@AmazonHelp Also concern how I get my shipping charges back once self return product?",
+      "match_category": "multi_match",
+      "stage1_label": "refund_return",
+      "llm_label": "refund_return",
+      "agreement": true
+    },
+    {
+      "customer_tweet_id": "17676",
+      "customer_message": "@AmazonHelp Being #harrassed by the delivery guys for days, reached out to customer service multiple times but hardly any resolution !",
+      "match_category": "multi_match",
+      "stage1_label": "delivery_order_status",
+      "llm_label": "delivery_order_status",
+      "agreement": true
+    },
+    {
+      "customer_tweet_id": "17682",
+      "customer_message": "@AmazonHelp Oh you are so considerate, then why can't you treat the orders you take with same consideration, #Awful customer service",
+      "match_category": "multi_match",
+      "stage1_label": "delivery_order_status",
+      "llm_label": "service_complaint",
+      "agreement": false
+    },
+    {
+      "customer_tweet_id": "17686",
+      "customer_message": "@AmazonHelp hey I started a Amazon prime trial..i was charged $1..wats that about ?",
+      "match_category": "multi_match",
+      "stage1_label": "prime_membership",
+      "llm_label": "prime_membership",
+      "agreement": true
+    },
+    {
+      "customer_tweet_id": "17899",
+      "customer_message": "@AmazonHelp I have called already and spoken to the rep. This keeps repeating. Fire your courier managers in my locality",
+      "match_category": "multi_match",
+      "stage1_label": "delivery_order_status",
+      "llm_label": "delivery_order_status",
+      "agreement": true
+    },
+    {
+      "customer_tweet_id": "17916",
+      "customer_message": "@115850 why am i charged $10.99 for prime membership every month when i have purchased it for INR 499?",
+      "match_category": "multi_match",
+      "stage1_label": "prime_membership",
+      "llm_label": "prime_membership",
+      "agreement": true
+    },
+    {
+      "customer_tweet_id": "17918",
+      "customer_message": "@AmazonHelp Please elaborate. If the charges are of prime subscription on https://t.co/PDFhxlk2Fc then why was i charged 499 in the first place??",
+      "match_category": "multi_match",
+      "stage1_label": "prime_membership",
+      "llm_label": "prime_membership",
+      "agreement": true
+    },
+    {
+      "customer_tweet_id": "17925",
+      "customer_message": "@AmazonHelp @115850 at my address. Will pay then return charges. But also want to tell u this is not right that we pay self return courier cost then what's",
+      "match_category": "multi_match",
+      "stage1_label": "refund_return",
+      "llm_label": "refund_return",
+      "agreement": true
+    },
+    {
+      "customer_tweet_id": "18174",
+      "customer_message": "@AmazonHelp Your customer service has reverted saying that apparently the package has been delivered and signed by receipt my yesterday. Not true.",
+      "match_category": "multi_match",
+      "stage1_label": "delivery_order_status",
+      "llm_label": "delivery_order_status",
+      "agreement": true
+    },
+    {
+      "customer_tweet_id": "18202",
+      "customer_message": "@AmazonHelp #AmazonIndia ordered echo plus on 6th October, till now have not recieved any cashback. Now customer care is saying i am eligible for (1/2)",
+      "match_category": "multi_match",
+      "stage1_label": "device_digital_content",
+      "llm_label": "payment_billing",
+      "agreement": false
+    },
+    {
+      "customer_tweet_id": "18209",
+      "customer_message": "@115850. Thanks Joyeeta(customer service) for AMAZON service. Didn't opted for faster delivery still got it when i emailed you its urgent.",
+      "match_category": "multi_match",
+      "stage1_label": "delivery_order_status",
+      "llm_label": "other",
+      "agreement": false
+    }
+  ]
+}

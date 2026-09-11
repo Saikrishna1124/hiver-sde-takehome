@@ -1,0 +1,28 @@
+{
+  "total_train_rows_evaluated": 2139,
+  "match_breakdown": {
+    "zero_match": 1152,
+    "single_match": 824,
+    "multi_match": 163
+  },
+  "stage1_selection": {
+    "single_match_kept": 824,
+    "multi_match_excluded": 163,
+    "zero_match_pool": 1152,
+    "zero_match_sampled": 400,
+    "seed": 42,
+    "total_stage1_rows": 1224
+  },
+  "label_distribution": {
+    "delivery_order_status": 470,
+    "other": 400,
+    "service_complaint": 113,
+    "device_digital_content": 73,
+    "refund_return": 59,
+    "account_access": 33,
+    "seller_marketplace": 26,
+    "payment_billing": 23,
+    "item_quality_issue": 20,
+    "prime_membership": 7
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "train_fitted_majority": {
+    "strategy": "most_frequent (train-fitted)",
+    "majority_class": "delivery_order_status",
+    "correct_predictions": 44,
+    "total_examples": 200,
+    "accuracy": 0.22,
+    "per_intent": {
+      "account_access": {
+        "support": 7,
+        "predicted": 0,
+        "tp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "prime_membership": {
+        "support": 5,
+        "predicted": 0,
+        "tp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "device_digital_content": {
+        "support": 9,
+        "predicted": 0,
+        "tp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "seller_marketplace": {
+        "support": 6,
+        "predicted": 0,
+        "tp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "refund_return": {
+        "support": 12,
+        "predicted": 0,
+        "tp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "payment_billing": {
+        "support": 6,
+        "predicted": 0,
+        "tp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "item_quality_issue": {
+        "support": 6,
+        "predicted": 0,
+        "tp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "delivery_order_status": {
+        "support": 44,
+        "predicted": 200,
+        "tp": 44,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "service_complaint": {
+        "support": 15,
+        "predicted": 0,
+        "tp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "other": {
+        "support": 90,
+        "predicted": 0,
+        "tp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  },
+  "golden_oracle_majority": {
+    "strategy": "golden-oracle majority (test distribution \u2014 NOT a blind baseline)",
+    "majority_class": "other",
+    "correct_predictions": 90,
+    "total_examples": 200,
+    "accuracy": 0.45,
+    "per_intent": {
+      "account_access": {
+        "support": 7,
+        "tp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "prime_membership": {
+        "support": 5,
+        "tp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "device_digital_content": {
+        "support": 9,
+        "tp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "seller_marketplace": {
+        "support": 6,
+        "tp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "refund_return": {
+        "support": 12,
+        "tp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "payment_billing": {
+        "support": 6,
+        "tp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "item_quality_issue": {
+        "support": 6,
+        "tp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "delivery_order_status": {
+        "support": 44,
+        "tp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "service_complaint": {
+        "support": 15,
+        "tp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "other": {
+        "support": 90,
+        "tp": 90,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  }
+}

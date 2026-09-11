@@ -1,0 +1,13 @@
+# Pinned for reproducibility. Python 3.10+
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.1
+matplotlib==3.9.2
+pyyaml==6.0.2
+python-dotenv==1.0.1
+pytest==8.3.2
+
+# Added in later phases (embeddings, vector search, LLM):
+# sentence-transformers==3.0.1
+# faiss-cpu==1.8.0
+# google-generativeai==0.7.2

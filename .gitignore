@@ -1,0 +1,16 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Raw dataset is large and must not be committed.
+data/raw/
+*.csv.zip
+
+
+# Virtual environments and temporary files
+.venv/
+env/
+evaluation/*.tmp
+*.tmp

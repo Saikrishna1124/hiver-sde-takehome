@@ -1,0 +1,292 @@
+{
+  "11078": {
+    "customer_tweet_id": "11078",
+    "customer_message": "@AmazonHelp Talked w/ cust. serv. yesterday. Just sent an email from link. Would like a straight answer abt my order.",
+    "assigned_intent": "delivery_order_status",
+    "reasoning": "The customer is asking for clarification/information regarding their order status after contacting customer service.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-10T16:25:44.126455+00:00",
+    "raw_response": "{\n  \"intent\": \"delivery_order_status\",\n  \"reasoning\": \"The customer is asking for clarification/information regarding their order status after contacting customer service.\"\n}"
+  },
+  "13157": {
+    "customer_tweet_id": "13157",
+    "customer_message": "@AmazonHelp I have asked the customer care exec on phone to cancel the order. Don't want to waste any more of my time on this.",
+    "assigned_intent": "service_complaint",
+    "reasoning": "The customer is expressing frustration about wasting time with customer support and stating they already called to cancel the order, focusing on their dissatisfaction with the service experience.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-10T16:25:52.151517+00:00",
+    "raw_response": "{\n  \"intent\": \"service_complaint\",\n  \"reasoning\": \"The customer is expressing frustration about wasting time with customer support and stating they already called to cancel the order, focusing on their dissatisfaction with the service experience.\"\n}"
+  },
+  "13159": {
+    "customer_tweet_id": "13159",
+    "customer_message": "@AmazonHelp I am now cancelling this order because your delivery service just sucks despite prime membership. Switching to @118702 for future.",
+    "assigned_intent": "delivery_order_status",
+    "reasoning": "The customer is expressing frustration with Amazon's delivery service performance, which is leading them to cancel their order. Prime membership is mentioned only as context.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-10T16:25:56.245564+00:00",
+    "raw_response": "{\n  \"intent\": \"delivery_order_status\",\n  \"reasoning\": \"The customer is expressing frustration with Amazon's delivery service performance, which is leading them to cancel their order. Prime membership is mentioned only as context.\"\n}"
+  },
+  "14286": {
+    "customer_tweet_id": "14286",
+    "customer_message": "@119038 @115821 If it isn't clear yet, I WANT MY MONEY BACK. I NEVER AUTHORIZED THE LAST 4 TRANSACTIONS THAT WERE MADE. WTF.",
+    "assigned_intent": "refund_return",
+    "reasoning": "The customer explicitly demands their money back ('I WANT MY MONEY BACK') due to unauthorized transactions, which prioritizes the refund request intent.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-10T16:26:01.920230+00:00",
+    "raw_response": "{\n  \"intent\": \"refund_return\",\n  \"reasoning\": \"The customer explicitly demands their money back ('I WANT MY MONEY BACK') due to unauthorized transactions, which prioritizes the refund request intent.\"\n}"
+  },
+  "14855": {
+    "customer_tweet_id": "14855",
+    "customer_message": "@115821 407-8406190-7752345. i want refund amount -1399/- amazon seller was lying. amazon custamare care side also.",
+    "assigned_intent": "refund_return",
+    "reasoning": "The customer's primary request is to receive a refund for the specified order amount, despite mentioning issues with the seller and customer support.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-10T16:26:05.210468+00:00",
+    "raw_response": "{\n  \"intent\": \"refund_return\",\n  \"reasoning\": \"The customer's primary request is to receive a refund for the specified order amount, despite mentioning issues with the seller and customer support.\"\n}"
+  },
+  "15279": {
+    "customer_tweet_id": "15279",
+    "customer_message": "@AmazonHelp 408-9273159-6369903.replacement ordered from 24th Oct.no1 contact me.Really worst courier service from Amazon",
+    "assigned_intent": "delivery_order_status",
+    "reasoning": "The customer is complaining about a delay and lack of communication from the courier regarding a replacement order that was placed on October 24th.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-10T16:26:13.867916+00:00",
+    "raw_response": "{\n  \"intent\": \"delivery_order_status\",\n  \"reasoning\": \"The customer is complaining about a delay and lack of communication from the courier regarding a replacement order that was placed on October 24th.\"\n}"
+  },
+  "16117": {
+    "customer_tweet_id": "16117",
+    "customer_message": "@115850 No speedy respnse frm the seller side..I asked 2 return my money but they are not ready 2 clr my issue i need my query to b solved",
+    "assigned_intent": "seller_marketplace",
+    "reasoning": "The customer is specifically complaining about a lack of response and resolution from a third-party seller regarding a refund request.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-10T16:26:33.907258+00:00",
+    "raw_response": "{\n  \"intent\": \"seller_marketplace\",\n  \"reasoning\": \"The customer is specifically complaining about a lack of response and resolution from a third-party seller regarding a refund request.\"\n}"
+  },
+  "16428": {
+    "customer_tweet_id": "16428",
+    "customer_message": "@AmazonHelp Not impressed with Amazon Logistics. Computer parts delayed a week and a refund is the only option? Really disappointed.",
+    "assigned_intent": "delivery_order_status",
+    "reasoning": "The customer's primary issue is a week-long delivery delay caused by Amazon Logistics.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-10T16:26:38.527736+00:00",
+    "raw_response": "{\n  \"intent\": \"delivery_order_status\",\n  \"reasoning\": \"The customer's primary issue is a week-long delivery delay caused by Amazon Logistics.\"\n}"
+  },
+  "16433": {
+    "customer_tweet_id": "16433",
+    "customer_message": "@119356 @AmazonHelp     horrible service, lousy customer care, non existent courier phone numbers. So much for becoming a Prime customer!",
+    "assigned_intent": "service_complaint",
+    "reasoning": "The customer is expressing general frustration with Amazon's support experience and customer care ('horrible service, lousy customer care') without providing details about a specific order or package.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-10T16:26:50.413829+00:00",
+    "raw_response": "{\n  \"intent\": \"service_complaint\",\n  \"reasoning\": \"The customer is expressing general frustration with Amazon's support experience and customer care ('horrible service, lousy customer care') without providing details about a specific order or package.\"\n}"
+  },
+  "16784": {
+    "customer_tweet_id": "16784",
+    "customer_message": "@AmazonHelp That's what m doing n u making me believe more that refund policy by Amazon in India is really poor..!\nUr seller is even not taking calls nw",
+    "assigned_intent": "seller_marketplace",
+    "reasoning": "The customer is complaining about a third-party seller who is not responding or taking calls.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-10T16:26:53.837511+00:00",
+    "raw_response": "{\n  \"intent\": \"seller_marketplace\",\n  \"reasoning\": \"The customer is complaining about a third-party seller who is not responding or taking calls.\"\n}"
+  },
+  "16792": {
+    "customer_tweet_id": "16792",
+    "customer_message": "@AmazonHelp All m getting is apologies but no refund.. everything is online, unable to understand the delay!!",
+    "assigned_intent": "refund_return",
+    "reasoning": "The customer is expressing frustration over a delayed or missing refund that has not been credited.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-10T16:27:01.777564+00:00",
+    "raw_response": "{\"intent\": \"refund_return\", \"reasoning\": \"The customer is expressing frustration over a delayed or missing refund that has not been credited.\"}"
+  },
+  "1698": {
+    "customer_tweet_id": "1698",
+    "customer_message": "@AmazonHelp Thats the thing I told customer service. I created a new email address for the Prime trial and forgot it. What can I do so I'm not charged?",
+    "assigned_intent": "prime_membership",
+    "reasoning": "The customer is asking how to avoid being charged for a Prime trial after forgetting the email address used to sign up. Issues regarding Prime trial auto-renewals, charges, and cancellations fall under prime_membership.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-10T16:27:29.229047+00:00",
+    "raw_response": "{\n  \"intent\": \"prime_membership\",\n  \"reasoning\": \"The customer is asking how to avoid being charged for a Prime trial after forgetting the email address used to sign up. Issues regarding Prime trial auto-renewals, charges, and cancellations fall under prime_membership.\"\n}"
+  },
+  "1699": {
+    "customer_tweet_id": "1699",
+    "customer_message": "@AmazonHelp I called customer service and was told my membership wouldn't be renewed. I was just charged today. How do I get a refund? https://t.co/SeoQUsA0VA",
+    "assigned_intent": "prime_membership",
+    "reasoning": "The customer was charged for a membership renewal that was supposed to be canceled and is asking for a refund. Questions regarding Prime membership charges and Prime refunds belong under prime_membership.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-10T16:27:33.402979+00:00",
+    "raw_response": "{\n  \"intent\": \"prime_membership\",\n  \"reasoning\": \"The customer was charged for a membership renewal that was supposed to be canceled and is asking for a refund. Questions regarding Prime membership charges and Prime refunds belong under prime_membership.\"\n}"
+  },
+  "17639": {
+    "customer_tweet_id": "17639",
+    "customer_message": "@AmazonHelp It is a doorstep pick up but I need to bear the charges for the courier while I am struggling to get a refund for the already paid order",
+    "assigned_intent": "refund_return",
+    "reasoning": "The customer is disputing return courier charges and struggling to get a refund for an order, which directly falls under return cost disputes and refund issues.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-10T16:27:39.322119+00:00",
+    "raw_response": "{\n  \"intent\": \"refund_return\",\n  \"reasoning\": \"The customer is disputing return courier charges and struggling to get a refund for an order, which directly falls under return cost disputes and refund issues.\"\n}"
+  },
+  "15672": {
+    "customer_tweet_id": "15672",
+    "customer_message": "Fool me twice!  Another kindle release day, another missed \"guaranteed release day delivery\"  #AMAZONFAIL",
+    "assigned_intent": "delivery_order_status",
+    "reasoning": "The customer is complaining about a late delivery and a missed guaranteed release day delivery date.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-11T03:17:35.284919+00:00",
+    "raw_response": "{\n  \"intent\": \"delivery_order_status\",\n  \"reasoning\": \"The customer is complaining about a late delivery and a missed guaranteed release day delivery date.\"\n}"
+  },
+  "16796": {
+    "customer_tweet_id": "16796",
+    "customer_message": "@115850 406-5758893-2189165 faulty pc. the pc. returned but no refund recd. till now, got mail refund will be made in 5 days, bt not done. https://t.co/1jCDRlwfIZ",
+    "assigned_intent": "refund_return",
+    "reasoning": "The customer is complaining that they have returned a faulty product but have not received their promised refund.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-11T12:47:18.898714+00:00",
+    "raw_response": "{\"intent\": \"refund_return\", \"reasoning\": \"The customer is complaining that they have returned a faulty product but have not received their promised refund.\"}"
+  },
+  "17641": {
+    "customer_tweet_id": "17641",
+    "customer_message": "@AmazonHelp #pathetic customer service. New low in e-commerce. Trying to raise a return request 5 times. #Fail",
+    "assigned_intent": "refund_return",
+    "reasoning": "The customer is explicitly trying to initiate a return request, which falls under refund_return despite expressing frustration about customer service.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-11T12:47:56.327100+00:00",
+    "raw_response": "{\n  \"intent\": \"refund_return\",\n  \"reasoning\": \"The customer is explicitly trying to initiate a return request, which falls under refund_return despite expressing frustration about customer service.\"\n}"
+  },
+  "17655": {
+    "customer_tweet_id": "17655",
+    "customer_message": "@AmazonHelp I need a solution why u r not helping consumers on self return things. M not bought product to self return. Why Amazon allows such seller",
+    "assigned_intent": "refund_return",
+    "reasoning": "The customer is expressing frustration over being forced to do a self-return instead of a scheduled return pickup, which falls under return process and pickup disputes within refund_return.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-11T12:48:52.536535+00:00",
+    "raw_response": "{\n  \"intent\": \"refund_return\",\n  \"reasoning\": \"The customer is expressing frustration over being forced to do a self-return instead of a scheduled return pickup, which falls under return process and pickup disputes within refund_return.\"\n}"
+  },
+  "17659": {
+    "customer_tweet_id": "17659",
+    "customer_message": "@AmazonHelp Also concern how I get my shipping charges back once self return product?",
+    "assigned_intent": "refund_return",
+    "reasoning": "The customer is asking about getting a refund for return shipping costs after self-returning a product, which falls directly under refund and return disputes/inquiries.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-11T12:48:56.293415+00:00",
+    "raw_response": "{\n  \"intent\": \"refund_return\",\n  \"reasoning\": \"The customer is asking about getting a refund for return shipping costs after self-returning a product, which falls directly under refund and return disputes/inquiries.\"\n}"
+  },
+  "17676": {
+    "customer_tweet_id": "17676",
+    "customer_message": "@AmazonHelp Being #harrassed by the delivery guys for days, reached out to customer service multiple times but hardly any resolution !",
+    "assigned_intent": "delivery_order_status",
+    "reasoning": "The customer is reporting a specific problem regarding delivery drivers/couriers harassing them. Since a concrete issue with the delivery personnel is stated, it maps to delivery_order_status rather than service_complaint.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-11T12:49:21.826250+00:00",
+    "raw_response": "{\n  \"intent\": \"delivery_order_status\",\n  \"reasoning\": \"The customer is reporting a specific problem regarding delivery drivers/couriers harassing them. Since a concrete issue with the delivery personnel is stated, it maps to delivery_order_status rather than service_complaint.\"\n}"
+  },
+  "17682": {
+    "customer_tweet_id": "17682",
+    "customer_message": "@AmazonHelp Oh you are so considerate, then why can't you treat the orders you take with same consideration, #Awful customer service",
+    "assigned_intent": "service_complaint",
+    "reasoning": "The message expresses frustration with Amazon's customer service and general handling of orders, without specifying a concrete product, delivery, or account issue.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-11T12:49:45.014620+00:00",
+    "raw_response": "{\n  \"intent\": \"service_complaint\",\n  \"reasoning\": \"The message expresses frustration with Amazon's customer service and general handling of orders, without specifying a concrete product, delivery, or account issue.\"\n}"
+  },
+  "17686": {
+    "customer_tweet_id": "17686",
+    "customer_message": "@AmazonHelp hey I started a Amazon prime trial..i was charged $1..wats that about ?",
+    "assigned_intent": "prime_membership",
+    "reasoning": "The customer is asking about a $1 verification charge associated with starting an Amazon Prime trial, which falls directly under Prime membership and trial inquiries.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-11T12:50:42.858573+00:00",
+    "raw_response": "{\n  \"intent\": \"prime_membership\",\n  \"reasoning\": \"The customer is asking about a $1 verification charge associated with starting an Amazon Prime trial, which falls directly under Prime membership and trial inquiries.\"\n}"
+  },
+  "17899": {
+    "customer_tweet_id": "17899",
+    "customer_message": "@AmazonHelp I have called already and spoken to the rep. This keeps repeating. Fire your courier managers in my locality",
+    "assigned_intent": "delivery_order_status",
+    "reasoning": "The customer is complaining about repeated delivery issues caused by courier operations/management in their local area.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-11T12:50:56.119512+00:00",
+    "raw_response": "{\n  \"intent\": \"delivery_order_status\",\n  \"reasoning\": \"The customer is complaining about repeated delivery issues caused by courier operations/management in their local area.\"\n}"
+  },
+  "17916": {
+    "customer_tweet_id": "17916",
+    "customer_message": "@115850 why am i charged $10.99 for prime membership every month when i have purchased it for INR 499?",
+    "assigned_intent": "prime_membership",
+    "reasoning": "The customer is asking about recurring unexpected subscription charges for their Prime membership.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-11T12:50:59.758504+00:00",
+    "raw_response": "{\n  \"intent\": \"prime_membership\",\n  \"reasoning\": \"The customer is asking about recurring unexpected subscription charges for their Prime membership.\"\n}"
+  },
+  "17918": {
+    "customer_tweet_id": "17918",
+    "customer_message": "@AmazonHelp Please elaborate. If the charges are of prime subscription on https://t.co/PDFhxlk2Fc then why was i charged 499 in the first place??",
+    "assigned_intent": "prime_membership",
+    "reasoning": "The customer is asking for clarification regarding a charge specifically related to a Prime membership subscription.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-11T12:51:04.111327+00:00",
+    "raw_response": "{\n  \"intent\": \"prime_membership\",\n  \"reasoning\": \"The customer is asking for clarification regarding a charge specifically related to a Prime membership subscription.\"\n}"
+  },
+  "17925": {
+    "customer_tweet_id": "17925",
+    "customer_message": "@AmazonHelp @115850 at my address. Will pay then return charges. But also want to tell u this is not right that we pay self return courier cost then what's",
+    "assigned_intent": "refund_return",
+    "reasoning": "The customer is expressing a dispute regarding self-return courier costs, which falls directly under return and refund issues.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-11T12:51:11.526790+00:00",
+    "raw_response": "{\n  \"intent\": \"refund_return\",\n  \"reasoning\": \"The customer is expressing a dispute regarding self-return courier costs, which falls directly under return and refund issues.\"\n}"
+  },
+  "18174": {
+    "customer_tweet_id": "18174",
+    "customer_message": "@AmazonHelp Your customer service has reverted saying that apparently the package has been delivered and signed by receipt my yesterday. Not true.",
+    "assigned_intent": "delivery_order_status",
+    "reasoning": "The customer is disputing a delivery status update, stating that the package was marked as delivered and signed for, but they have not actually received it.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-11T12:51:30.458921+00:00",
+    "raw_response": "{\n  \"intent\": \"delivery_order_status\",\n  \"reasoning\": \"The customer is disputing a delivery status update, stating that the package was marked as delivered and signed for, but they have not actually received it.\"\n}"
+  },
+  "18202": {
+    "customer_tweet_id": "18202",
+    "customer_message": "@AmazonHelp #AmazonIndia ordered echo plus on 6th October, till now have not recieved any cashback. Now customer care is saying i am eligible for (1/2)",
+    "assigned_intent": "payment_billing",
+    "reasoning": "The customer is complaining about a missing promotional cashback for a purchase, which falls under payment and billing issues.",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-11T12:51:35.414157+00:00",
+    "raw_response": "{\n  \"intent\": \"payment_billing\",\n  \"reasoning\": \"The customer is complaining about a missing promotional cashback for a purchase, which falls under payment and billing issues.\"\n}"
+  },
+  "18209": {
+    "customer_tweet_id": "18209",
+    "customer_message": "@115850. Thanks Joyeeta(customer service) for AMAZON service. Didn't opted for faster delivery still got it when i emailed you its urgent.",
+    "assigned_intent": "other",
+    "reasoning": "The customer is expressing gratitude for quick delivery and customer service assistance. There is no active issue, query, or request being raised, so it falls under general feedback/chit-chat (other).",
+    "model": "gemini-3.6-flash",
+    "status": "success",
+    "timestamp": "2026-09-11T12:51:50.529979+00:00",
+    "raw_response": "{\n  \"intent\": \"other\",\n  \"reasoning\": \"The customer is expressing gratitude for quick delivery and customer service assistance. There is no active issue, query, or request being raised, so it falls under general feedback/chit-chat (other).\"\n}"
+  }
+}

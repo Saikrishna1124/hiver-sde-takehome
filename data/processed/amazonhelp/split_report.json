@@ -1,0 +1,42 @@
+{
+  "original_pairs": 3603,
+  "golden_messages_excluded": 200,
+  "conversation_siblings_excluded": 547,
+  "golden_conversations_excluded": 181,
+  "near_duplicates_removed": 138,
+  "usable_examples": 2718,
+  "train_examples": 2139,
+  "dev_examples": 579,
+  "train_conversations": 1115,
+  "dev_conversations": 278,
+  "conversation_overlap": 0,
+  "golden_tweet_overlap_train": 0,
+  "golden_tweet_overlap_dev": 0,
+  "golden_conv_overlap_train": 0,
+  "golden_conv_overlap_dev": 0,
+  "split_seed": 190,
+  "train_intent_distribution": {
+    "other": 1152,
+    "delivery_order_status": 517,
+    "service_complaint": 113,
+    "refund_return": 109,
+    "device_digital_content": 87,
+    "account_access": 42,
+    "seller_marketplace": 37,
+    "item_quality_issue": 33,
+    "payment_billing": 28,
+    "prime_membership": 21
+  },
+  "dev_intent_distribution": {
+    "other": 322,
+    "delivery_order_status": 139,
+    "refund_return": 39,
+    "service_complaint": 24,
+    "device_digital_content": 18,
+    "payment_billing": 14,
+    "seller_marketplace": 10,
+    "item_quality_issue": 6,
+    "prime_membership": 6,
+    "account_access": 1
+  }
+}
